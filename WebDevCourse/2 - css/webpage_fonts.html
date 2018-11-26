@@ -1,11 +1,51 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Webpage with Style</title>
-<style type="text/css">
 
+<title>Webpage with Style</title>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<style type="text/css">
+	
+	p{
+	 	font-family: 'Raleway', sans-serif;
+	}
+
+	.bold{
+		font-weight: bold;
+	}
+
+	.italic{
+		font-style: italic;
+	}
+
+	.underlined{
+		text-decoration: underline;
+	}
+	a{
+		text-decoration: none;
+	}
+
+	a:hover{
+		text-decoration: underline;
+		color: green;
+	}
+
+	.big{
+		font-size: 200%;
+	}
 </style>
 </head>
 <body>
-	<p>This is some text.</p>
+	<p class="bold">This is some text!</p>
+
+	<p class="italic">This is some italic text! <span class="bold">And this is bold and italic</span></p>
+
+	<p class="underlined">This text is underlined</p>
+
+	<a href="#">This is not underlined</a>
+
+	<p class="big">This text is big!</p>
 </body>
 </html>
