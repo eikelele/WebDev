@@ -8,6 +8,7 @@
 			width: 1000px;
 			height: 40px;
 			margin:0 auto;
+			border-bottom:1px #CCCCCC solid;
 		}
 
 		#logo{
@@ -30,33 +31,85 @@
 		#sign-in-text{
 			font-weight:bold;
 			font-size:80%;
-			font-family: Helvetica, Arial, sans-serif;
+			font-family: Helmet, sHelvetica, Arial, sans-serif;
 			position:relative;
 			top:11px;
 			left:10px;
 			padding-right:60px;
 		}
 
-		#top-bar-text{
+		.topbar-menu{
 			font-weight:bold;
-			font-size:80%;
-			font-family: Helvetica, Arial, sans-serif;
+			font-size:75%;
+			font-family: Helmet, Helvetica, Arial, sans-serif;
+			padding: 13px 15px 0 15px;
+			height: 27px;
+
+		}
+
+		#searchbar{
+			background-color:#E4E4E4;
+			border: none;
+			font-weight:bold;
+			font-size:14px;
+			padding: 5px;
+			margin: 5px;
+			float:left;
+		}
+
+		#news-bar-container{
+
+			background-color: #BB1919;
+			width:100%;
+			height:60px
+			}
+
+		#news-bar{
+			width:1000px;
+			height: 30px;
+			margin:auto 10px;
+			padding:5px 0px;
+			font-family: Helmet, Helvetica, Arial, sans-serif;
+			float:left;
+		}
+
+		.clear{
+			clear:both;
+		}
+
+		.header_font{
+			font-size:40px;
+			color:white;
 			position:relative;
-			top:11px;
-			left:15px;
+			top:-35px;
 		}
+		#menu-bar-container{
+			width:100%;
+			height: 40px;
+			background-color: #A91717;
+			color: white;
+			font-family: Helmet, Helvetica, Arial, sans-serif;
 
-		#news-div{
-			padding-right:30px;
+		}
+		.menu-bar-section{
+			padding-right: 5px;
+			padding-left:5px;
+			height: 30%;
+			border-left:1px #C2C2C2 solid;
 			float:left;
 		}
 
-		#sport-div{
+		.float_menu{
+			padding-right: 5px;
+			padding-left:5px;
 			float:left;
 		}
 
-
-
+		#menu-bar{
+			position:relative;
+			top:10px;
+			margin-left:10px;
+		}
 		body{
 			margin: 0;
 			padding: 0;
@@ -70,13 +123,59 @@
 			<img id="signin_logo" src="../images/sign_in.png">
 			<span id="sign-in-text">Sign in</span>
 		</div>
-		<div id="news-div" class="top-bar-section">
-			<span id="top-bar-text">News</span>
+
+		<div class="top-bar-section topbar-menu">
+			News
 		</div>
 
-		<div id="sport-div" class="top-bar-section">
-			<span id="top-bar-text">Sport</span>
+		<div class="top-bar-section topbar-menu">
+			Sport
+		</div>
+
+		<div class="top-bar-section topbar-menu">
+			Weather
+		</div>
+		<div class="top-bar-section topbar-menu">
+			Shop
+		</div>
+		<div class="top-bar-section topbar-menu">
+			Reel
+		</div>
+		<div class="top-bar-section topbar-menu">
+			Travel
+		</div>
+		<div class="top-bar-section topbar-menu">
+			More
+		</div>
+		<div class="top-bar-section">
+			<input id="searchbar" type="Search" placeholder="Search">
 		</div>
 	</div>
+	<div id="news-bar-container">
+		<div  id="news-bar">
+			<p  class="header_font">NEWS</p>
+		</div>
+	</div>
+	<div id="menu-bar-container">
+		<div id="menu-bar">
+			<div class="float_menu">Home</div>
+			<div class="menu-bar-section">Video</div>
+			<div class="menu-bar-section">World</div>
+			<div class="menu-bar-section">UK</div>
+			<div class="menu-bar-section">Business</div>
+			<div class="menu-bar-section">Tech</div>
+			<div class="menu-bar-section">Science</div>
+			<div class="menu-bar-section">Stories</div>
+			<div class="menu-bar-section">Entertainment & Arts</div>
+			<div class="menu-bar-section">Health</div>
+			<div class="menu-bar-section">World News TV</div>
+			<div class="menu-bar-section">More</div>
+		</div>
+	</div>
+	<main>
+		<div id="content">
+			
+		</div>	
+	</main>
 </body>
 </html>
